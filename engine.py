@@ -47,7 +47,7 @@ mv_features = 6
 
 X_train, y_train, X_test, y_test, mv_sc = process_and_split_multivariate_data(dataset,tstart, tend, mv_features)
 
-
+print("model is save in ml_pipeline folder\n")
 model_mv = train_multivariate_lstm(X_train, y_train, X_test, y_test, mv_features, mv_sc, save_model_path="output/model_mv_lstm.h5")
 
 
